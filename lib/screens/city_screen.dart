@@ -15,7 +15,33 @@ class _CityScreenState extends State<CityScreen> {
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('images/city_background.png'),
+            image: AssetImage('images/city_background.jpg'),
+            fit: BoxFit.cover,
+          ),
+        ),
+        constraints: const BoxConstraints.expand(),
+        child: SafeArea(
+          child: Column(
+            children: <Widget>[
+              Align(
+                alignment: Alignment.topLeft,
+                child: MaterialButton(
+                  onPressed: () {},
+                  child: const Icon(Icons.arrow_back_ios),
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(20.0),
+                child: null,
+              ),
+              MaterialButton(
+                onPressed: () {},
+                child: const Text(
+                  'Get Weather',
+                  style: kButtonTextStyle,
+                ),
+              )
+            ],
           ),
         ),
       ),
