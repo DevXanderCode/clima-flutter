@@ -63,6 +63,14 @@ class _LocationScreenState extends State<LocationScreen> {
                   ],
                 ),
               ),
+              const Padding(
+                padding: EdgeInsets.only(right: 15.0),
+                child: Text(
+                  "It's 🍦 time in San Francisco!",
+                  style: kMessageTextStyle,
+                  textAlign: TextAlign.right,
+                ),
+              ),
             ],
           ),
         ),
