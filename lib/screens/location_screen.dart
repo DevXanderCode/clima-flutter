@@ -48,6 +48,21 @@ class _LocationScreenState extends State<LocationScreen> {
                   ),
                 ],
               ),
+              Padding(
+                padding: EdgeInsets.only(left: 15.0),
+                child: Row(
+                  children: const <Widget>[
+                    Text(
+                      '32°',
+                      style: kTempTextStyle,
+                    ),
+                    Text(
+                      '☀️',
+                      style: kConditionTextStyle,
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
