@@ -13,10 +13,42 @@ class _LocationScreenState extends State<LocationScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: const BoxDecoration(
+        decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('images/location_background.jpg'),
+            image: const AssetImage('images/location_background.jpg'),
             fit: BoxFit.cover,
+            colorFilter: ColorFilter.mode(
+              Colors.white.withOpacity(0.8),
+              BlendMode.dstATop,
+            ),
+          ),
+        ),
+        constraints: BoxConstraints.expand(),
+        child: SafeArea(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  MaterialButton(
+                    onPressed: () {},
+                    child: const Icon(
+                      Icons.near_me,
+                      size: 50.0,
+                    ),
+                  ),
+                  MaterialButton(
+                    onPressed: () {},
+                    child: const Icon(
+                      Icons.location_city,
+                      size: 50.0,
+                    ),
+                  ),
+                ],
+              ),
+            ],
           ),
         ),
       ),
