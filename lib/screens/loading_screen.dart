@@ -18,6 +18,12 @@ class _LoadingScreenState extends State<LoadingScreen> {
   }
 
   @override
+  void initState() {
+    super.initState();
+    getLocation();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
