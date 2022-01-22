@@ -5,7 +5,7 @@ const apiKey = 'dd558343d3f6126f2adffdf1c28522b1';
 const openWeatherMapURL = 'https://api.openweathermap.org/data/2.5/weather';
 
 class WeatherModel {
-  Future<dynamic> getCityWeather(cityName) async {
+  Future<dynamic> getCityWeather(String cityName) async {
     NetworkHelper networkHelper = NetworkHelper(
         '$openWeatherMapURL?q=$cityName&appid=$apiKey&units=metric');
     return await networkHelper.getData();
