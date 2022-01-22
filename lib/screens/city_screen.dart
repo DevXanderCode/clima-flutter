@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:clima/utilities/contants.dart';
+import 'package:clima/utilities/constants.dart';
 
 class CityScreen extends StatefulWidget {
   const CityScreen({Key? key}) : super(key: key);
